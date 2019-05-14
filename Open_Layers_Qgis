@@ -1,0 +1,14 @@
+#Adicionando Camadas Vetoriais
+#utf-8
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from qgis.core import *
+from qgis.gui import *
+import processing
+import sys
+
+#importando os arquivos
+Dis = "E:/Publica/0_ARQUIVOS_GEO/Distritos/Distritos_Testes_Python.shp"
+Per = "E:/Publica/0_ARQUIVOS_GEO/L12349_1997_OUCentro/SPURB_OCE_Perimetro.shp"
+iface.addVectorLayer(Dis, "Distritos", "ogr")
+iface.addVectorLayer(Per, "Perímetro_OUCentro", "ogr")
